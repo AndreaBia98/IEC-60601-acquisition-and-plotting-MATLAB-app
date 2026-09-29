@@ -42,14 +42,16 @@ Il metodo è gravimetrico: la pompa eroga in un contenitore posto su una bilanci
 ```
 
 I quattro grafici ricostruiti dal plotter:
+
+
 <img width="1595" height="958" alt="image" src="https://github.com/user-attachments/assets/a1bfa4c5-4158-4474-b05c-1c36b89c1989" />
 
 | # | Grafico | Asse X | Asse Y | Cosa mostra |
 |---|---|---|---|---|
-| 1 | **Massa nel tempo** | tempo (s) | massa cumulata (g) | quanto liquido è stato erogato; la pendenza è la portata media |
-| 2 | **Portata nel tempo** | tempo (s) | portata (ml/min) | portata istantanea ricavata a passo S (5 s di default), con la retta della portata impostata e il limite del transitorio |
-| 3 | **Transitorio** (start-up, Fig. 105 della norma) | tempo (s) | portata (ml/min) | come la pompa raggiunge il regime nei primi istanti |
-| 4 | **Curva a tromba** (Fig. 106/107 della norma) | finestra di osservazione P (min) | errore di portata (%) | precisione della pompa in funzione della scala temporale considerata |
+| 1 | **Massa nel tempo** | tempo (s) | massa cumulata (g) | Quanto liquido è stato erogato; la pendenza è la portata media |
+| 2 | **Portata nel tempo** | tempo (s) | portata (ml/min) | Portata istantanea ricavata a passo S (5 s di default), con la retta della portata impostata e il limite del transitorio |
+| 3 | **Transitorio** (start-up, Fig. 105 della norma) | tempo (s) | portata (ml/min) | Come la pompa raggiunge il regime nei primi istanti |
+| 4 | **Curva a tromba** (Fig. 106/107 della norma) | finestra di osservazione P (min) | errore di portata (%) | Precisione della pompa in funzione della scala temporale considerata |
 
 ---
 
@@ -86,16 +88,51 @@ I quattro grafici ricostruiti dal plotter:
 
 Con **LOAD XLS** si carica il file salvato al passo precedente; il nome del file compare in alto nell'app. Parametri disponibili:
 
-| Parametro | Default | Significato |
-|---|---|---|
-| Sample interval (s) | 5 | passo di campionamento **S** usato per l'analisi |
-| Max Time window Duration (min) | 31 | finestra di osservazione massima **P** della curva a tromba |
-| Transient_time (s) | 120 | durata del transitorio iniziale da escludere dalla curva a tromba |
-| FlowSet (ml/min) | 38 | portata impostata **r** (Qset) |
-| Filtred | off | applica un filtro (media mobile) prima della curva a tromba |
-| Automatic Plot on change Variable | off | ridisegna i grafici a ogni cambio di parametro |
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Immagine<br></th>
+    <th class="tg-0pky">Parametro</th>
+    <th class="tg-0pky">Default</th>
+    <th class="tg-0pky">Significato</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky" rowspan="6">
+<img width="306" height="606" alt="image" src="https://github.com/user-attachments/assets/05c63a64-f5e3-4fa2-96d8-04cf6e3b4e70" /> <br></td>
+    <td class="tg-0pky">Sample interval (s)</td>
+    <td class="tg-0pky">5</td>
+    <td class="tg-0pky">passo di campionamento <span style="font-weight:bold">**S**</span> usato per l'analisi</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Max Time window Duration (min)</td>
+    <td class="tg-0pky">31</td>
+    <td class="tg-0pky">finestra di osservazione massima <span style="font-weight:bold">**P**</span> della curva a tromba</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Transient_time (s)</td>
+    <td class="tg-0pky">120</td>
+    <td class="tg-0pky">durata del transitorio iniziale da escludere dalla curva a tromba</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FlowSet (ml/min)</td>
+    <td class="tg-0pky">38</td>
+    <td class="tg-0pky">portata impostata **r** (Qset)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Filtred</td>
+    <td class="tg-0pky">off</td>
+    <td class="tg-0pky">applica un filtro (media mobile) prima della curva a tromba</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Automatic Plot on change Variable</td>
+    <td class="tg-0pky">off</td>
+    <td class="tg-0pky">ridisegna i grafici a ogni cambio di parametro</td>
+  </tr>
+</tbody></table>
+
 
 I pulsanti **IEC PLOT** (ridisegna) e **SAVE XLS** (esporta i risultati) completano l'interfaccia.
+
 
 ### 4.2 Pre-elaborazione (comune ai grafici)
 
