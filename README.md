@@ -167,7 +167,7 @@ Sono tracciate le due curve (asse X = P in min, asse Y = errore %), la linea del
 
 ---
 
-## 5. Il calcolo IEC in ml/min
+## 5.IEC 60601-2-24 in ml/min
 
 ### 5.1 Algoritmo della curva a tromba, passo per passo
 
