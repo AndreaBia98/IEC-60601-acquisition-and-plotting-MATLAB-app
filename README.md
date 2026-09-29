@@ -1,6 +1,5 @@
-# IEC-60601-acquisition-and-plotting-MATLAB-app
+#  Report metodologico IEC 60601 per pompe peristaltiche
 
-# Report metodologico
 ## Caratterizzazione gravimetrica della precisione di una pompa dosatrice secondo IEC 60601-2-24 (portate in ml/min)
 
 | | |
